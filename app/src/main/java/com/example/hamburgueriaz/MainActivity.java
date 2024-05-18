@@ -186,17 +186,17 @@ public class MainActivity extends AppCompatActivity {
         valorTotalTextView.setText(resumoPedido);
 
 
-            String[] destinatarios = {"cliente@hamgurgueriaz.com"};
-            String assunto = "Pedido de " + nomeEditText.getText().toString();
-            String corpo = resumoPedido;
+        String[] destinatarios = {"cliente@hamgurgueriaz.com"};
+        String assunto = "Pedido de " + nomeEditText.getText().toString();
+        String corpo = resumoPedido;
 
-            Intent intent = new Intent(Intent.ACTION_SENDTO);
-            intent.setData(Uri.parse("mailto:"));
-            intent.putExtra(Intent.EXTRA_EMAIL, destinatarios);
-            intent.putExtra(Intent.EXTRA_SUBJECT, assunto);
-            intent.putExtra(Intent.EXTRA_TEXT, corpo);
+        Intent intent = new Intent(Intent.ACTION_SENDTO);
+        intent.setData(Uri.parse("mailto:"));
+        intent.putExtra(Intent.EXTRA_EMAIL, destinatarios);
+        intent.putExtra(Intent.EXTRA_SUBJECT, assunto);
+        intent.putExtra(Intent.EXTRA_TEXT, corpo);
 
-            startActivity(intent);
+        startActivity(intent);
 
     }
 }
