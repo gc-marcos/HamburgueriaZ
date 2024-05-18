@@ -18,7 +18,7 @@ This repository uses:
 1. To **clone repository** you need to have [git][git-download] installed:
 
 ```bash
-git clone git@github.com:Hackathon-Orange-Juice-Squad-1/orange-notes_front-end.git
+[git clone git@github.com:Hackathon-Orange-Juice-Squad-1/orange-notes_front-end.git](https://github.com/gc-marcos/HamburgueriaZ.git)
 ```
 
 
