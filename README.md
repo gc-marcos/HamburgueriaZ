@@ -10,7 +10,7 @@ This repository uses:
 
 | Dependências | Descrição | Documentos |
 | -------------------------------------------- | ------------------ | ---------------- |
-| [![Android Studio][Java] | Java JDK | [📚][Java-doc] |
+| ![Android] | Java JDK | [📚][Java-doc] |
 
 
 ## 🔨 Project Setup
@@ -51,3 +51,5 @@ This project has its code and all architectures in the following folders:
 [Java JDK]: https://www.oracle.com/java/technologies/downloads/#java20
 
 [Java-doc]: https://docs.oracle.com/en/java/
+
+[Android]: https://www.gstatic.com/devrel-devsite/prod/ve5ef9ac7b497e19ece9427facc78d0c59aaab7a2bc6a0f75fdae93f4ee589f67/android/images/lockup.svg
