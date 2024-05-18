@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background_page" >
+
+        <ImageView
+            android:id="@+id/buger"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:contentDescription="Imagem Buger"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/buger" />
+
+        <TextView
+            android:theme="@style/font_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="FAÇA SEU PEDIDO!" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:theme="@style/font_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome aqui"
+            android:gravity="center_horizontal" />
+
+        <TableLayout
+            android:theme="@style/font_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cheddar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Cheddar" />
+
+                <CheckBox
+                    android:id="@+id/bacon"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Bacon" />
+
+                <CheckBox
+                    android:id="@+id/alface"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alface" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/tomate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Tomate" />
+
+                <CheckBox
+                    android:id="@+id/queijo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Queijo" />
+
+                <CheckBox
+                    android:id="@+id/onion_rings"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Onion Rings" />
+            </TableRow>
+
+            <TableRow>
+
+                <CheckBox
+                    android:id="@+id/maionese"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Maionese" />
+
+                <CheckBox
+                    android:id="@+id/ketchup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Ketchup" />
+
+                <CheckBox
+                    android:id="@+id/mostarda"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mostasda" />
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:theme="@style/font_titles"
+            android:text="QUANTIDADE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_subtrair"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="-" />
+
+            <EditText
+                android:id="@+id/qtd_buger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_somar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:textSize="30dp"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:theme="@style/font_titles"
+            android:text="Resumo do pedido" />
+
+        <TextView
+            android:id="@+id/valor_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:theme="@style/font_body"
+            android:textAlignment="center"
+            android:text="R$ 0"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_enviar_pedido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/background_button"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:text="fazer pedido" />
+
+    </LinearLayout>
+
+
+</ScrollView>
